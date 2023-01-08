@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .p1::first-line {
+        color:red;
+        font-size: 30px;
+        }
+        .p2::first-letter {
+        color: green;
+        font-size: xx-large;
+        }
+        h1::before {
+        content:url(./emojii.png);
+        }
+        h4::after {
+        content:url(./emojii.png);
+        }
+        ::marker { 
+        color: red;
+        font-size: 23px;
+        }
+        ::selection {
+        color: red;
+        background: yellow;
+        }  
+
+    </style>
+    <title>Document</title>
+</head>
+
+
+<body><!-- this is for the::before pseudo element example -->
+  <h1> <br> this is the example The::before pseudo element</h1>
+    <br>
+    <!-- this is for the::first-line pseudo element example -->
+    <pre>
+<p class="p1">this first line is  by the  the ::first-line pseudo element
+the content below will not effected by the the ::first-line pseudo element
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, voluptas?
+</p></pre>
+<!-- this is for the::first-letter pseudo element example -->
+   <p class="p2">this is effect of The::first-letter pseudo element</p> 
+<br>
+<!-- this is for the::after pseudo element example -->
+   <h4>this is the effect of the::after pseudo element</h4>
+
+<!-- this is for the::marker pseudo element example -->
+<ol><caption><h3> Pseudo element marker effect</h3></caption>
+    <li>after</li>
+    <li>before</li>
+    <li>first-line</li>
+    <li>first-letter</li>
+    <li>marker</li>
+    <li>selection</li>
+</ol>
+
+
+<!-- this is for the::selection pseudo element example -->
+<p>you can select the any item to feel effect  of selection pseudo element </p>
+<!-- this is for the::after pseudo element example -->
+
+</body>
+</html>
